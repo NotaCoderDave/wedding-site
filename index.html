@@ -29,19 +29,8 @@
     </div>
 
     <script>
-        var audio = document.getElementById('background-music');
-
-        function playAudio() {
-            audio.play();
-        }
-
-        function pauseAudio() {
-            audio.pause();
-        }
-
-        function setVolume(value) {
-            audio.volume = value;
-        }
+         var audio = document.getElementById('background-music');
+        audio.volume = 0.5; // Adjust volume as needed (0 to 1)
 
         document.addEventListener("DOMContentLoaded", function() {
             document.body.classList.add('visible');
