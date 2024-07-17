@@ -8,28 +8,28 @@
     <style>
         /* CSS for flower images */
         .flower-top-left {
-            position: absolute;
+            position: fixed;
             top: 0;
             left: 0;
             width: 15%;
-            z-index: -1; /* Ensure flowers are behind other content */
+            z-index: 0; /* Ensure flowers are behind other content */
         }
 
         .flower-top-right {
-            position: absolute;
+            position: fixed;
             top: 0;
             right: 0;
             width: 15%;
-            z-index: -1; /* Ensure flowers are behind other content */
+            z-index: 0; /* Ensure flowers are behind other content */
         }
 
         .flower-bottom-middle {
-            position: absolute;
+            position: fixed;
             bottom: 0;
             left: 50%;
             transform: translateX(-50%);
             width: 20%;
-            z-index: -1; /* Ensure flowers are behind other content */
+            z-index: 0; /* Ensure flowers are behind other content */
         }
 
         /* CSS for the overlay */
@@ -126,3 +126,4 @@
     </script>
 </body>
 </html>
+
