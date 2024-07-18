@@ -24,7 +24,7 @@ body, html {
 
 /* Flower Styles */
 .flower-top-left {
-    position: fixed;
+    position: absolute;
     top: 20px;
     left: 20px;
     width: 15%; /* Adjust size as needed */
@@ -32,7 +32,7 @@ body, html {
 }
 
 .flower-top-right {
-    position: fixed;
+    position: absolute;
     top: 20px;
     right: 20px;
     width: 15%; /* Adjust size as needed */
@@ -40,7 +40,7 @@ body, html {
 }
 
 .flower-bottom-middle {
-    position: fixed;
+    position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
