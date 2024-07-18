@@ -3,13 +3,13 @@ let currentSlide = 0;
 const slides = document.querySelectorAll('.slide');
 
 function showNextSlide() {
-    slides[currentSlide].style.opacity = 0;
+    slides[currentSlide].classList.remove('active');
     currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].style.opacity = 1;
+    slides[currentSlide].classList.add('active');
 }
 
 // Initial slide display
-slides[currentSlide].style.opacity = 1;
+slides[currentSlide].classList.add('active');
 
 // Change slide every 3 seconds
 setInterval(showNextSlide, 3000);
