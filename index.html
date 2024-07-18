@@ -5,125 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Wedding Invitation</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        /* CSS for flower images */
-        .flower-top-left {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 15%;
-            z-index: 0; /* Ensure flowers are behind other content */
-        }
-
-        .flower-top-right {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 15%;
-            z-index: 0; /* Ensure flowers are behind other content */
-        }
-
-        .flower-bottom-middle {
-            position: fixed;
-            bottom: 0;
-            left: 50%;
-            transform: translateX(-50%);
-            width: 20%;
-            z-index: 0; /* Ensure flowers are behind other content */
-        }
-
-        /* CSS for the overlay */
-        .overlay {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            text-align: center;
-            z-index: 1000; /* Ensure it overlays everything else */
-        }
-
-        .overlay.hidden {
-            display: none;
-        }
-
-        .overlay img {
-            max-width: 80%; /* Adjust as needed */
-            height: auto;
-        }
-
-        /* CSS for the invitation text */
-        .invitation {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            z-index: 1; /* Ensure text is above flowers */
-        }
-
-        .invitation h1, .invitation h2 {
-            margin: 0;
-        }
-
-        body.fade-in {
-            opacity: 0;
-            transition: opacity 2s;
-        }
-
-        body.fade-in.visible {
-            opacity: 1;
-        }
-    </style>
 </head>
 <body class="fade-in">
-    <!-- Mexican Flowers -->
-    <img src="topleftflower.png" alt="Mexican Flower Top Left" class="flower-top-left">
-    <img src="toprightflower.png" alt="Mexican Flower Top Right" class="flower-top-right">
-    <img src="bottomcenterflower.png" alt="Mexican Flower Bottom Middle" class="flower-bottom-middle">
-
-    <!-- Background Music -->
-    <audio id="background-music" loop>
-        <source src="Thee Sacred Souls - Can I Call You Rose.mp3" type="audio/mp3">
-        Your browser does not support the audio element.
-    </audio>
-
-    <!-- Overlay -->
-    <div id="overlay" class="overlay">
-        <img src="path/to/your-image.png" alt="Welcome to our wedding invitation! Click anywhere to start the experience">
-    </div>
-
-    <!-- Invitation Layout -->
-    <div class="invitation">
-        <header>
+    <!-- Invitation Card -->
+    <div class="invitation-card">
+        <img src="path/to/flower-top-left.jpg" alt="Top Left Flower" class="flower-top-left">
+        <img src="path/to/flower-top-right.jpg" alt="Top Right Flower" class="flower-top-right">
+        <div class="invitation-text">
             <h1>You're Invited to Our Wedding</h1>
             <h2>David and Nelly</h2>
             <h2>November 9, 2024</h2>
-        </header>
+        </div>
+        <img src="path/to/flower-bottom-middle.jpg" alt="Bottom Middle Flower" class="flower-bottom-middle">
     </div>
-
-    <script>
-        var audio = document.getElementById('background-music');
-        var overlay = document.getElementById('overlay');
-
-        function startExperience() {
-            audio.play().catch(function() {
-                // Handle the error if playback fails
-                console.log('Autoplay was prevented');
-            });
-            overlay.classList.add('hidden');
-        }
-
-        document.addEventListener("DOMContentLoaded", function() {
-            document.body.classList.add('visible');
-            overlay.addEventListener('click', startExperience);
-        });
-    </script>
 </body>
 </html>
-
