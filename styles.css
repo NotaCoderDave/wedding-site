@@ -19,11 +19,39 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Flower Styles */
+.flower-top-left {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 25%; /* Larger size */
+    z-index: 0;
+}
+
+.flower-top-right {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 25%; /* Larger size */
+    z-index: 0;
+}
+
+.flower-bottom-middle {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30%; /* Larger size */
+    z-index: 0;
 }
 
 /* Invitation Styles */
 .invitation {
     text-align: center;
+    z-index: 1;
 }
 
 header h1 {
