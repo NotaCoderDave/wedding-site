@@ -19,32 +19,32 @@ body, html {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden; /* Prevent scrolling */
+    overflow: hidden;
 }
 
 /* Flower Styles */
 .flower-top-left {
     position: fixed;
-    top: 0;
-    left: 0;
-    width: 25%; /* Larger size */
+    top: 10%;
+    left: 10%;
+    width: 20%; /* Adjust size as needed */
     z-index: 0;
 }
 
 .flower-top-right {
     position: fixed;
-    top: 0;
-    right: 0;
-    width: 25%; /* Larger size */
+    top: 10%;
+    right: 10%;
+    width: 20%; /* Adjust size as needed */
     z-index: 0;
 }
 
 .flower-bottom-middle {
     position: fixed;
-    bottom: 0;
+    bottom: 5%;
     left: 50%;
     transform: translateX(-50%);
-    width: 30%; /* Larger size */
+    width: 25%; /* Adjust size as needed */
     z-index: 0;
 }
 
