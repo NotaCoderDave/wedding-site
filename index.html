@@ -3,24 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Wedding Invitation</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Wedding Website</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        .left-side {
+            width: 50%;
+            background-image: url('your-invitation-image.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .right-side {
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+        }
+        .links {
+            text-align: center;
+        }
+        .links a {
+            display: block;
+            margin: 20px 0;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            color: #333;
+            text-decoration: none;
+            border: 2px solid #333;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+        .links a:hover {
+            background-color: #333;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
-    <!-- Slideshow -->
-    <div class="slideshow-container">
-        <div class="slideshow">
-            <img src="photo1.jpg" alt="Photo 1" class="slide">
-            <img src="photo2.jpg" alt="Photo 2" class="slide">
-            <img src="photo3.jpg" alt="Photo 3" class="slide">
+    <div class="container">
+        <div class="left-side"></div>
+        <div class="right-side">
+            <div class="links">
+                <a href="rsvp-link.html">RSVP</a>
+                <a href="registry-link.html">Registry</a>
+            </div>
         </div>
     </div>
-
-    <!-- Invitation Image -->
-    <div class="invitation-image">
-        <img src="invitation.jpg" alt="Invitation">
-    </div>
-
-    <script src="script.js"></script>
 </body>
 </html>
